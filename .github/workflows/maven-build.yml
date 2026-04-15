@@ -27,3 +27,11 @@ jobs:
           cache: maven
       - name: Build with Maven Wrapper
         run: ./mvnw -B verify
+        
+      - name: Upload coverage reports to Datadog
+        if: always()
+        uses: DataDog/coverage-upload-github-action@v1
+        with:
+          api_key: ${{ secrets.DD_API_KEY }}
+          site: datadoghq.com
+          files: target/site/jacoco/jacoco.xml  
