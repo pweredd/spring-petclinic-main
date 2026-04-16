@@ -2,7 +2,6 @@ package org.springframework.samples.petclinic;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.boot.SpringApplication;
 
 public class HelloPet {
 
@@ -16,5 +15,24 @@ public class HelloPet {
 		logger.info("Exiting main() - HelloPet has started successfully");
 		logger.info("Exiting main() - HelloPet has started successfully");
 		logger.info("Exiting main() - HelloPet has started successfully");
+		
+		writeExtendedGreeting();
 	}
+	
+	
+	private static void writeExtendedGreeting() {
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		logger.info("Helloooooooooooooooo");
+		
+	}
+	
+	
 }
